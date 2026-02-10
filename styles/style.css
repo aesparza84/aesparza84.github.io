@@ -108,7 +108,7 @@ dWhite  : #f2f2f2
     }
 
     .card-container {
-        max-width: 50%;
+        max-width: 85%;
     }
 }
 
@@ -163,8 +163,6 @@ dWhite  : #f2f2f2
     display: inline;
     padding-left: .8rem;
     padding-right: .8rem;
-    padding-top: .3rem;
-    padding-bottom: .3rem;
     background-color: #94a7ab;
     border-radius: 30px;
 }
