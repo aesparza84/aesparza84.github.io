@@ -4,6 +4,12 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --secondCol:#085ade;
+    --mainCol:white;
+    --thirdCol:#393e46;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -57,7 +63,7 @@ dWhite  : #f2f2f2
 .page-header a {
     font-size: 1.4rem;
     text-decoration: none;
-    color: #393e46;
+    color: var(--secondCol);
 }
 
 .page-header a:hover {
@@ -158,13 +164,18 @@ dWhite  : #f2f2f2
     justify-content: space-between;
 }
 
+.card-intro ul {
+    padding: 0;
+}
+
 .card-intro li {
     list-style-type: none;
-    display: inline;
-    padding-left: .8rem;
-    padding-right: .8rem;
+    display: inline-block;
+    padding-left: .4rem;
+    padding-right: .4rem;
     background-color: #94a7ab;
     border-radius: 30px;
+    margin: .2rem;
 }
 
 .card-intro h3 {
