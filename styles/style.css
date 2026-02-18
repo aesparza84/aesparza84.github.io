@@ -113,6 +113,16 @@ dWhite  : #f2f2f2
         grid-template-columns: 1fr;
     }
 
+    .intro {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+    }
+
+    .intro-text {
+        width: 80%;
+    }
+
     .card-container {
         max-width: 85%;
     }
