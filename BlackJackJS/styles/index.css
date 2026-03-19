@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+    font-size:24px;
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 500px) {
+    html {
+        font-size: 16px;
+    } 
+}
+
+body {
+    /* min-width: 400px;
+    max-width: 1200px; */
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.page-header {
+    width: 100%;
+    max-width: inherit;
+    margin-bottom: 2rem;
+
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.page-header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.page-header a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--secondCol);
+}
+
+.page-header a:hover {
+    transform: scale(1.2);
+    transition: ease-in 0.2s;
+}
+
+.page-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 900px) 1fr;   
+    justify-items: center;
+}
+
+.col-2 {
+    grid-column: 2;
+}
+
+
+.w-100 {
+    width: 100%;
+}
+
+.game-start-btn-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.game-start-btn-holder button{
+    padding: .4rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.game-start-btn-holder button:hover{
+    background-color: azure;
+    box-shadow: 2px 2px 2px 2px black;
+    transition: .25s;
+}
+
+
+
+.card {
+    /* border: .2rem solid black;
+    border-radius: 10px; */
+    width: 4rem;
+    height: 6.5rem;
+}
+
+.card-inner {
+    height: inherit;
+    width: inherit;
+    position: relative;
+    transform-style: preserve-3d;
+
+    transition: 1s;
+}
+
+.flipped{
+    transform: rotateY(180deg);
+}
+
+.card-content,
+.card-back {
+    position: absolute;
+    border: .2rem solid black;
+    border-radius: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+    
+    font-size: 1.5rem;
+    backface-visibility: hidden;
+
+    margin: 0px;
+    padding: 0px;
+    height: inherit;
+    width: inherit;
+    
+    /* height: 100%;
+    width: 100%; */
+}
+
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+
+.card-header{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: start;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.card-main{
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-footer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: .5em;
+    margin-left: .5em;
+}
+
+.card p {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.player-area,
+.dealer-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hand-total {
+    padding: 1rem;
+}
+
+.dealer-area {
+    margin-bottom: 5rem;
+}
+
+.player-area button {
+    background-color: beige;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.player-area button:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.25s;
+}
+
+.card-holder {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.result-text-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.gr-text {
+    color: rgb(5, 184, 5);
+}
+
+.red-text {
+    color: rgb(225, 16, 16);
+}
+
+.hidden{
+    display: none;
+}

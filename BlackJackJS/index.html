@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <!-- <link rel="stylesheet" href="../styles/style.css"> -->
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="page-grid">
+    <div class="col-2 w-100">
+        <header class="page-header">
+            <h1 >Blackjack</h1>
+            <nav>
+                <a href="../index.html">Projects</a>
+            </nav>
+        </header>
+        
+        <!-- <div class="card">
+            <div class="card-inner flipped">
+                <div class="card-content">
+                    <div class="card-header">
+                        <p class="rank">5</p>
+                    </div>
+                    
+                    <div class="card-main">
+                        <p>
+                            <span class="rank">5</span>
+                            <span class="suit">&</span>
+                        </p>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <p class="rank">5</p>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="card-header">
+                        <p class="rank">?</p>
+                    </div>
+                    
+                    <div class="card-main">
+                        <p>
+                            <span class="rank">?</span>
+                        </p>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <p class="rank">?</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div> -->
+    
+        <div class="game-start-btn-holder">
+            <button id="btn-start">Start Game</button>
+        </div>
+    
+        <div id="dealer-area" class="dealer-area">
+            <h3>Dealer</h3>
+            <div class="card-holder">
+                
+            </div>
+            <div class="hand-total">
+                <p></p>
+            </div>
+    
+        </div>
+    
+        <div id="result-container" class="result-text-holder">
+            <p id="result-text" class="result-text"></p>
+        </div>
+    
+        <div id="player-area" class="player-area">
+            <h3>Player</h3>
+            <div class="card-holder">
+            </div>
+            
+            <div class="hand-total">
+                <p></p>
+            </div>
+           
+            <div id="btn-group">
+                <button id="btn-hit">Hit</button>
+                <button id="btn-stand">Stand</button>
+            </div>
+        </div> 
+    </div>
+  
+
+    <script src="js/gameLogic/blackJack.js" type="module"></script>
+</body>
+</html>
